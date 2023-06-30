@@ -12,7 +12,6 @@
     font-family: 'Nunito', sans-serif;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -147,13 +146,14 @@ header .navbar a:hover {
 }
 
 .home .image {
-    flex:1 1 40rem;
+    flex:1 1 30rem;
 }
 
 .home .image img {
     width: 100%;
     padding: 1rem;
     animation: float 3s linear infinite;
+    background: none;
 }
 
 @keyframes float {
@@ -174,6 +174,11 @@ header .navbar a:hover {
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
+}
+
+.why {
+    width: 60px;
+    height: 50px;
 }
 
 .speciality .box-container {
@@ -221,13 +226,13 @@ header .navbar a:hover {
     padding: 1rem 0;
 }
 
-.speciality .box-container .box:hover .image {
+/* .speciality .box-container .box:hover .image {
     top: 0;
 }
 
 .speciality .box-container .box:hover .content {
     transform: translateY(100%);
-}
+} */
 
 .popular .box-container{
     display: flex;
@@ -249,7 +254,7 @@ header .navbar a:hover {
 .popular .box-container .box img {
     height: 25rem;
     object-fit: cover;
-    width: 100%;
+    /* width: 100%; */
     border-radius: .5rem;
 }
 
@@ -259,7 +264,7 @@ header .navbar a:hover {
     background: var(--red);
     color: #fff;
     font-size: 2rem;
-    padding: 5rem 1rem;
+    padding: 4px;
     border-radius: .5rem;
 }
 
@@ -504,6 +509,18 @@ header .navbar a:hover {
 
 .loader-container.fade-out {
     top: -120%;
+}
+
+#about  {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 36px;
+}
+
+#special {
+    font-size: 1.9rem;
+    color: #666;
 }
 
 
